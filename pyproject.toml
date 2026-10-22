@@ -1,0 +1,22 @@
+[project]
+name = "fastapi-campusx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kevit-shubhkumar-patel", email = "shubhkumar.patel@kevit.io" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "email-validator>=2.3.0",
+    "fastapi[standard]>=0.157.0",
+    "pydantic>=2.14.1",
+    "pymongo>=4.19.0",
+]
+
+[project.scripts]
+fastapi-campusx = "fastapi_campusx:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
